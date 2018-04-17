@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA35F0DA2086497700C51D85 /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA35F0D92086497700C51D85 /* MapaViewController.swift */; };
 		EA47D3292085FFBB009BAF9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47D3282085FFBB009BAF9F /* AppDelegate.swift */; };
 		EA47D32B2085FFBB009BAF9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47D32A2085FFBB009BAF9F /* ViewController.swift */; };
 		EA47D32E2085FFBB009BAF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA47D32C2085FFBB009BAF9F /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA35F0D92086497700C51D85 /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		EA47D3252085FFBB009BAF9F /* EjemploMapas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjemploMapas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA47D3282085FFBB009BAF9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA47D32A2085FFBB009BAF9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				EA47D3282085FFBB009BAF9F /* AppDelegate.swift */,
 				EA47D32A2085FFBB009BAF9F /* ViewController.swift */,
+				EA35F0D92086497700C51D85 /* MapaViewController.swift */,
 				EA47D33A208603D4009BAF9F /* CoordenadasViewController.swift */,
 				EA47D32C2085FFBB009BAF9F /* Main.storyboard */,
 				EA47D32F2085FFBC009BAF9F /* Assets.xcassets */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA47D33B208603D4009BAF9F /* CoordenadasViewController.swift in Sources */,
+				EA35F0DA2086497700C51D85 /* MapaViewController.swift in Sources */,
 				EA47D32B2085FFBB009BAF9F /* ViewController.swift in Sources */,
 				EA47D3292085FFBB009BAF9F /* AppDelegate.swift in Sources */,
 			);

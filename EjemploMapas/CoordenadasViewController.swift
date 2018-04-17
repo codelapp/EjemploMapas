@@ -29,7 +29,16 @@ class CoordenadasViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     @IBAction func btnEnviarCoordenadas(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "enviarCoordenadas", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "enviarCoordenadas" {
+            if let destino = segue.destination as? MapaViewController {
+                destino.latitudMapa = latitud
+                destino.longitudMapa = longitud
+            }
+        }
     }
     
 }
