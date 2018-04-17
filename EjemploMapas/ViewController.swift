@@ -1,25 +1,36 @@
-//
-//  ViewController.swift
-//  EjemploMapas
-//
-//  Created by jesus on 17/4/18.
-//  Copyright © 2018 com.codelapp. All rights reserved.
-//
-
 import UIKit
+import MapKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UISearchBarDelegate {
+    
+    
+    @IBOutlet var buscador: UISearchBar!
+    @IBOutlet weak var mapa: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        buscador.delegate = self
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        buscador.resignFirstResponder()
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(buscador.text!) { (places:[CLPlacemark]?, error: Error?) in
+            if error == nil {
+                let place = places?.first
+                let anotacion = MKPointAnnotation()
+                anotacion.coordinate = (place?.location?.coordinate)!
+                anotacion.title = self.buscador.text
+                let span = MKCoordinateSpanMake(0.10, 0.10)
+                let region = MKCoordinateRegion(center: anotacion.coordinate, span: span)
+                self.mapa.setRegion(region, animated: true)
+                self.mapa.addAnnotation(anotacion)
+                self.mapa.selectAnnotation(anotacion, animated: true)
+            } else {
+                print(error!)
+            }
+        }
     }
-
-
 }
 

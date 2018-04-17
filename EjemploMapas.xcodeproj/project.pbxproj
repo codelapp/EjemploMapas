@@ -12,6 +12,7 @@
 		EA47D32E2085FFBB009BAF9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA47D32C2085FFBB009BAF9F /* Main.storyboard */; };
 		EA47D3302085FFBC009BAF9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA47D32F2085FFBC009BAF9F /* Assets.xcassets */; };
 		EA47D3332085FFBC009BAF9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA47D3312085FFBC009BAF9F /* LaunchScreen.storyboard */; };
+		EA47D33B208603D4009BAF9F /* CoordenadasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA47D33A208603D4009BAF9F /* CoordenadasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		EA47D32F2085FFBC009BAF9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA47D3322085FFBC009BAF9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA47D3342085FFBC009BAF9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA47D33A208603D4009BAF9F /* CoordenadasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordenadasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				EA47D3282085FFBB009BAF9F /* AppDelegate.swift */,
 				EA47D32A2085FFBB009BAF9F /* ViewController.swift */,
+				EA47D33A208603D4009BAF9F /* CoordenadasViewController.swift */,
 				EA47D32C2085FFBB009BAF9F /* Main.storyboard */,
 				EA47D32F2085FFBC009BAF9F /* Assets.xcassets */,
 				EA47D3312085FFBC009BAF9F /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA47D33B208603D4009BAF9F /* CoordenadasViewController.swift in Sources */,
 				EA47D32B2085FFBB009BAF9F /* ViewController.swift in Sources */,
 				EA47D3292085FFBB009BAF9F /* AppDelegate.swift in Sources */,
 			);
